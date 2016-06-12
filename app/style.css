@@ -1,0 +1,51 @@
+#login{
+    padding-top: 100px;
+}
+
+#dashboard{
+    padding-top: 50px;
+}
+
+.schedule table{
+    font-size: 12px;
+}
+
+.schedule .elipsis{
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#courseList {
+
+}
+#courseList ul {
+    list-style: none;
+    padding: 0;
+}
+
+#courseList li {
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+
+#loaderWrapper{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: rgba(0,0,0,.2);
+    z-index: 1000;
+
+}
+
+#loader{
+    position: fixed;
+    top: calc(50% - 45px);
+    left:50%;
+}
+#loader-message{
+    margin-top:20px;
+}

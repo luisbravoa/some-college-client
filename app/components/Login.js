@@ -13,22 +13,31 @@ export default class Login extends React.Component {
 
     render() {
 
+        var error;
+
+        if(this.props.error){
+            error = (<div className="alert alert-danger" role="alert">
+                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+            </div>);
+        }
+
         return (
-            <div className="row">
+            <div className="row" id="login">
                 <div className="col-lg-8 col-lg-push-2">
-                    <h1 className="text-center">Please Login To continue</h1>
+                    <h1 className="text-center">Please Login</h1>
                     <form className="form-horizontal">
+                        {error}
                         <div className="form-group">
                             <label for="inputEmail3" className="col-sm-2 control-label">Email</label>
                             <div className="col-sm-10">
-                                <input type="email" className="form-control" id="inputEmail3" placeholder="Email" ref="email"  />
+                                <input type="email" className="form-control" id="inputEmail3" placeholder="Email" ref="email" defaultValue="info@luisbravoa.com"/>
                             </div>
                         </div>
                         <div className="form-group">
                             <label for="inputPassword3" className="col-sm-2 control-label">Password</label>
                             <div className="col-sm-10">
                                 <input type="password" className="form-control" id="inputPassword3"
-                                       placeholder="Password" ref="password" />
+                                       placeholder="Password" ref="password" defaultValue="12345678" />
                             </div>
                         </div>
                         <div className="form-group">

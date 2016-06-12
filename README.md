@@ -1,7 +1,7 @@
 Some College Client
 ============================
 
-This a the client side for an example application done using React and Redux.
+This a the client side for an example application to done using React and Redux.
 
 Dependencies
 ============
