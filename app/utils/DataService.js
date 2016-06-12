@@ -1,7 +1,7 @@
 var $ = require('jquery');
 var api_token;
 function DataService() {
-    this.base_url = "http://localhost:8000";
+    this.base_url = "http://college.luisbravoa.com";
 
 
 }
